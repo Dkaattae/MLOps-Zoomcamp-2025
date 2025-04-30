@@ -10,3 +10,5 @@
 515
 ## 5, RMSE of linear regression model
 7.649262443101424
+## 6, RMSE of linear regression on validation
+7.811813318594438
