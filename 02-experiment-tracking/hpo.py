@@ -54,7 +54,7 @@ def run_optimization(data_path: str, num_trials: int):
     }
 
     rstate = np.random.default_rng(42)  # for reproducible results
-    fmin(
+    best_result = fmin(
         fn=objective,
         space=search_space,
         algo=tpe.suggest,
