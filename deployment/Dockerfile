@@ -1,12 +1,13 @@
 FROM agrigorev/zoomcamp-model:mlops-2024-3.10.13-slim
 
+COPY ["Pipfile", "Pipfile.lock",  "./"]
+
 RUN pip install -U pip
 RUN pip install pipenv
 
-COPY ["Pipfile", "Pipfile.lock", "./"]
-
 RUN pipenv install --system --deploy
 
-COPY ["starter.py" "./"]
+COPY ["starter.py", "./"]
 
-ENTRYPOINT ["python", "starter.py", "--year=2023", "--month=4"]
+ENTRYPOINT ["python", "-u", "starter.py"]
+CMD ["--year=2023", "--month=5"]
