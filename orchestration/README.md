@@ -16,6 +16,9 @@ run python script
 go to localhost:5000 to see the mlflow ui   
 go to the port printed on screen to see prefect ui
 
-after running, make sure to 
-`prefect server stop`
+after running, make sure to    
+`prefect server stop`   
+if running in cloud and you do not want to continue working on the pipeline.    
+that is to avoid ongoing cloud charges.   
 
+make sure to stop cloud server, if running on AWS EC2. 
