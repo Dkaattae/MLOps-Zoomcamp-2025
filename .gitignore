@@ -1,1 +1,5 @@
 deployment/output/*
+experiment_tracking/mlartifacts
+experiment_tracking/mlruns
+experiment_tracking/mlflow.db
+experiment_tracking/taxi_data
